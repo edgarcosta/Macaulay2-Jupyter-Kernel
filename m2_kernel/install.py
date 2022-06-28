@@ -14,7 +14,7 @@ from notebook.nbextensions import install_nbextension
 
 kernel_json = {
     "argv": [sys.executable, "-m", "m2_kernel", "-f", "{connection_file}"],
-    "display_name": "M2",
+    "display_name": "Macaulay2",
     "language": "text/x-macaulay2",
     "codemirror_mode": "macaulay2",
 }
