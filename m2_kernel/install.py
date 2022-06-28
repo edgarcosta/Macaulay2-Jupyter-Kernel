@@ -31,7 +31,7 @@ def install_kernel_assets(user=True, prefix=None):
             json.dump(kernel_json, f, indent=2, sort_keys=False)
         shutil.copy('{}/m2-spec/kernel.js'.format(assets_dir), td)
         print('Installing kernel spec ...')
-        KernelSpecManager().install_kernel_spec(td, kernel_name='m2', user=user, prefix=prefix)
+        KernelSpecManager().install_kernel_spec(td, kernel_name='Macaulay2', user=user, prefix=prefix)
 
     print("Installing nbextension for syntax highlighting ...")
     install_nbextension('{}/m2-mode'.format(assets_dir),
